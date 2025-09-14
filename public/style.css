@@ -1,0 +1,119 @@
+:root {
+  --bg: #f8fafc;
+  --fg: #1e293b;
+  --muted: #475569;
+  --brand: #2563eb;
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.container { width: min(1100px, 100%); margin: 0 auto; padding: 0 16px; }
+
+/* HEADER */
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.logo { font-size: 1.3rem; font-weight: bold; }
+.menu { list-style: none; display: flex; gap: 16px; margin: 0; padding: 0; }
+.menu a { text-decoration: none; color: var(--muted); }
+.menu a.active, .menu a:hover { color: var(--brand); }
+.search-form input { padding: 6px; }
+.search-form button { padding: 6px; cursor: pointer; }
+
+/* HERO */
+.hero { position: relative; text-align: center; }
+.hero img { width: 100%; height: auto; display: block; }
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+.hero-text button {
+  background: var(--brand);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ATIVIDADES */
+.atividades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.card img { width: 100%; border-radius: 6px; }
+.card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--brand);
+  text-decoration: none;
+}
+
+/* CONTENT */
+.content { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; margin-bottom: 24px; }
+.artigo, .sidebar section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+}
+.artigo img { width: 100%; border-radius: 6px; }
+.sidebar form { display: flex; flex-direction: column; gap: 8px; }
+.sidebar input, .sidebar button {
+  padding: 8px; border: 1px solid var(--border); border-radius: 6px;
+}
+.sidebar button {
+  background: var(--brand);
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.site-footer a { color: var(--brand); text-decoration: none; }
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .atividades { grid-template-columns: 1fr; }
+  .content { grid-template-columns: 1fr; }
+  .hero-text { font-size: 0.9rem; padding: 10px; }
+}

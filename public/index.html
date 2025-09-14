@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu Horizonte</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Museu Horizonte</h1>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="#" class="active">Início</a></li>
+          <li><a href="#">Exposições</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      <form class="search-form">
+        <input type="text" placeholder="Buscar exposições...">
+        <button type="submit">🔍</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img src="https://picsum.photos/id/1011/1200/400" alt="Imagem do museu">
+      <div class="hero-text">
+        <h2>Bem-vindo ao Museu Horizonte</h2>
+        <p>Descubra exposições, atividades e experiências inesquecíveis.</p>
+        <button>Ver Programação</button>
+      </div>
+    </section>
+
+    <!-- ATIVIDADES -->
+    <section class="atividades container">
+      <article class="card">
+        <img src="https://picsum.photos/id/1025/400/200" alt="Atividade 1">
+        <h3>Exposição de Arte Moderna</h3>
+        <p>Conheça artistas que revolucionaram o século XX.</p>
+        <a href="#">Saiba mais</a>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/id/1035/400/200" alt="Atividade 2">
+        <h3>Visita Guiada</h3>
+        <p>Participe de uma visita especial com nossos curadores.</p>
+        <a href="#">Agendar</a>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/id/1043/400/200" alt="Atividade 3">
+        <h3>Oficina Infantil</h3>
+        <p>Atividades educativas e criativas para crianças.</p>
+        <a href="#">Inscrever</a>
+      </article>
+    </section>
+
+   
+    <section class="content container">
+      <article class="artigo">
+        <h3>Sobre o Museu Horizonte</h3>
+        <img src="https://picsum.photos/id/1062/700/300" alt="Interior do museu">
+        <p>O Museu Horizonte é referência em arte e cultura, com coleções que abrangem diferentes épocas e estilos.</p>
+        <a href="#">Ler mais</a>
+      </article>
+
+      <aside class="sidebar">
+        <section class="info">
+          <h4>Informações práticas</h4>
+          <ul>
+            <li>📍 Endereço: Av. Central, 123</li>
+            <li>⏰ Horário: 9h - 18h</li>
+            <li>🎟️ Ingressos: R$ 20</li>
+          </ul>
+        </section>
+        <section class="newsletter">
+          <h4>Receba novidades</h4>
+          <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Assinar</button>
+          </form>
+        </section>
+      </aside>
+    </section>
+  
+
+</main>
+
+  <footer class="site-footer">
     
+    <nav>
+     <p>Matheus nicoli</p>
+  </footer>
 </body>
 </html>
