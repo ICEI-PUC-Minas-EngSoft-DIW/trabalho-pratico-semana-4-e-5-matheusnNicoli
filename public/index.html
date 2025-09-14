@@ -4,89 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Museu Horizonte</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="logo">Museu Horizonte</h1>
-      <nav class="main-nav">
-        <ul class="menu">
-          <li><a href="#" class="active">Início</a></li>
-          <li><a href="#">Exposições</a></li>
-          <li><a href="#">Eventos</a></li>
-          <li><a href="#">Contato</a></li>
+  <header class="site-header border-bottom shadow-sm sticky-top bg-white">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+      <h1 class="logo fs-4 fw-bold text-primary">Museu Horizonte</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link active text-primary">Início</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Exposições</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Eventos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
         </ul>
       </nav>
-      <form class="search-form">
-        <input type="text" placeholder="Buscar exposições...">
-        <button type="submit">🔍</button>
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="Buscar exposições...">
+        <button class="btn btn-primary ms-2" type="submit">🔍</button>
       </form>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <img src="https://picsum.photos/id/1011/1200/400" alt="Imagem do museu">
-      <div class="hero-text">
-        <h2>Bem-vindo ao Museu Horizonte</h2>
+    <section class="hero position-relative text-center">
+      <img src="https://picsum.photos/id/1011/1200/400" class="img-fluid rounded" alt="Imagem do museu">
+      <div class="hero-text position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 text-white p-4 rounded">
+        <h2 class="h3">Bem-vindo ao Museu Horizonte</h2>
         <p>Descubra exposições, atividades e experiências inesquecíveis.</p>
-        <button>Ver Programação</button>
+        <button class="btn btn-primary">Ver Programação</button>
       </div>
     </section>
 
-    <section class="atividades container">
-      <article class="card">
-        <img src="https://picsum.photos/id/1025/400/200" alt="Exposição de Arte Moderna">
-        <h3>Exposição de Arte Moderna</h3>
-        <p>Conheça artistas que revolucionaram o século XX.</p>
-        <a href="#">Saiba mais</a>
-      </article>
-      <article class="card">
-        <img src="https://picsum.photos/id/1035/400/200" alt="Visita Guiada">
-        <h3>Visita Guiada</h3>
-        <p>Participe de uma visita especial com nossos curadores.</p>
-        <a href="#">Agendar</a>
-      </article>
-      <article class="card">
-        <img src="https://picsum.photos/id/1043/400/200" alt="Oficina Infantil">
-        <h3>Oficina Infantil</h3>
-        <p>Atividades educativas e criativas para crianças.</p>
-        <a href="#">Inscrever</a>
-      </article>
+    <section class="atividades container my-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/id/1025/400/200" class="card-img-top" alt="Exposição de Arte Moderna">
+            <div class="card-body text-center">
+              <h3 class="h5">Exposição de Arte Moderna</h3>
+              <p>Conheça artistas que revolucionaram o século XX.</p>
+              <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/id/1035/400/200" class="card-img-top" alt="Visita Guiada">
+            <div class="card-body text-center">
+              <h3 class="h5">Visita Guiada</h3>
+              <p>Participe de uma visita especial com nossos curadores.</p>
+              <a href="#" class="btn btn-outline-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/id/1043/400/200" class="card-img-top" alt="Oficina Infantil">
+            <div class="card-body text-center">
+              <h3 class="h5">Oficina Infantil</h3>
+              <p>Atividades educativas e criativas para crianças.</p>
+              <a href="#" class="btn btn-outline-primary">Inscrever</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="content container">
-      <article class="artigo">
-        <h3>Sobre o Museu Horizonte</h3>
-        <img src="https://picsum.photos/id/1062/700/300" alt="Interior do museu">
-        <p>O Museu Horizonte é referência em arte e cultura, com coleções que abrangem diferentes épocas e estilos.</p>
-        <a href="#">Ler mais</a>
-      </article>
-
-      <aside class="sidebar">
-        <section class="info">
-          <h4>Informações práticas</h4>
-          <ul>
-            <li>📍 Endereço: Av. Central, 123</li>
-            <li>⏰ Horário: 9h - 18h</li>
-            <li>🎟️ Ingressos: R$ 20</li>
-          </ul>
-        </section>
-        <section class="newsletter">
-          <h4>Receba novidades</h4>
-          <form>
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <button type="submit">Assinar</button>
-          </form>
-        </section>
-      </aside>
+    <section class="content container mb-5">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <article class="card shadow-sm p-3 h-100">
+            <h3 class="h5">Sobre o Museu Horizonte</h3>
+            <img src="https://picsum.photos/id/1062/700/300" class="img-fluid rounded my-3" alt="Interior do museu">
+            <p>O Museu Horizonte é referência em arte e cultura, com coleções que abrangem diferentes épocas e estilos.</p>
+            <a href="#" class="btn btn-link p-0">Ler mais</a>
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <aside>
+            <section class="card shadow-sm p-3 mb-3">
+              <h4 class="h6">Informações práticas</h4>
+              <ul class="list-unstyled">
+                <li>📍 Endereço: Av. Central, 123</li>
+                <li>⏰ Horário: 9h - 18h</li>
+                <li>🎟️ Ingressos: R$ 20</li>
+              </ul>
+            </section>
+            <section class="card shadow-sm p-3">
+              <h4 class="h6">Receba novidades</h4>
+              <form class="d-flex flex-column gap-2">
+                <input type="text" class="form-control" placeholder="Seu nome" required>
+                <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn btn-primary">Assinar</button>
+              </form>
+            </section>
+          </aside>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Museu Horizonte | Desenvolvido por Matheus Nicoli</p>
+  <footer class="site-footer bg-light border-top text-center py-3">
+    <p class="mb-0">© 2025 Museu Horizonte | Desenvolvido por Matheus Nicoli</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
